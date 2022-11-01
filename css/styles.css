@@ -149,13 +149,27 @@ header {
   color: var(--accent-color);
 }
 
-.contact-link::before {
-  content: '';
+.icon-email {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  background-color: tomato;
-  background-size: contain;
+  fill: var(--primary-text-color);
+}
+
+.icon-email:hover,
+.icon-email:focus {
+  fill: var(--accent-color);
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.icon-smartphone:hover {
+  fill: var(--accent-color);
 }
 
 /* Банер */
@@ -239,30 +253,19 @@ header {
   margin-left: 30px;
 }
 
-.section-list .item::before {
-  display: block;
-  content: '';
-  height: 120px;
+.icon {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
   margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
-.icon-antenna::before {
-  background-image: url(../images/icons.svg/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/icons.svg/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/icons.svg/diagram.svg);
-}
-
-.scon-astronaut::before {
-  background-image: url(../images/icons.svg/astronaut.svg);
+.icon-antenna {
+  width: 70px;
+  height: 70px;
 }
 
 .section-title,
@@ -359,17 +362,53 @@ header {
 }
 
 .content {
-  padding: 30px 10px;
+  padding-top: 30px;
+  padding-left: 10px;
+
+  padding-right: 10px;
 }
 
 .position {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+}
+
+.social-icons li + li {
+  margin-left: 10px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-fon-color);
+}
+
+.icon-social {
+  fill: currentColor;
 }
 
 /* Підвал */
