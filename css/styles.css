@@ -144,23 +144,16 @@ header {
   color: var(--primary-text-color);
 }
 
+.icon-header {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
-
-.icon-header {
-  margin-right: 10px;
-  align-self: center;
-  fill: #757575;
-  caret-color: auto;
-}
-
-/* .icon-header:hover,
-.icon-header:focus {
-  fill: var(--accent-color);
-} */
 
 /* Банер */
 .hero {
@@ -244,16 +237,19 @@ header {
 }
 
 .icon {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 100px;
-  padding-right: 100px;
   margin-bottom: 30px;
+
+  display: flex;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+
   background: #f5f4fa;
   border-radius: 4px;
 }
 
-.icon-antenna {
+.icon-imeg {
   width: 70px;
   height: 70px;
 }
@@ -376,10 +372,6 @@ header {
   padding-bottom: 30px;
 }
 
-.social-icons li + li {
-  margin-left: 10px;
-}
-
 .social-link {
   display: flex;
   justify-content: center;
@@ -416,20 +408,20 @@ header {
   color: var(--nav-primary-text-color);
 }
 
-.client-section {
-  padding-top: 16px;
-  padding-left: 32px;
-  padding-bottom: 16px;
-  padding-right: 32px;
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-
-.client-link {
-  fill: #afb1b8;
-}
-.client-section:hover,
-.client-section:focus {
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
   fill: #2196f3;
   border: 1px solid var(--accent-color);
   border-radius: 4px;
@@ -438,9 +430,6 @@ header {
 .client-icons {
   display: flex;
   justify-content: space-between;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 30px;
 }
 
 /* Підвал */
